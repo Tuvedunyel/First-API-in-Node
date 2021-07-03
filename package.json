@@ -1,0 +1,24 @@
+{
+  "name": "first-api-in-node",
+  "version": "1.0.0",
+  "description": "First nodeJS API",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Tuvedunyel/First-API-in-Node.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Tuvedunyel/First-API-in-Node/issues"
+  },
+  "homepage": "https://github.com/Tuvedunyel/First-API-in-Node#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "nodemon": "^2.0.9"
+  }
+}
