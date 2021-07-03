@@ -44,4 +44,14 @@ router.put("/:id", (req, res) => {
   );
 });
 
+router.delete("/:id", (req, res) => {
+  if (!ObjectID.isValid(req.params.id))
+    return res.status(400).send("ID unknown : " + req.params.id);
+
+  PostsModel.findByIdAndRemove(req.params.id, (err, docs) => {
+    if (!err) res.send(docs);
+    else console.log("Delete error : " + err);
+  });
+});
+
 module.exports = router;
